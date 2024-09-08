@@ -60,8 +60,8 @@ export async function getStaticProps() {
     }
     try {
         // first, grab our Contentful keys from the .env file
-        const space = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
-        const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
+        const space = 'k461xaf6lhl8';
+        const accessToken = 'T9X2MvTZr4fQGF8khAsXRUUGCGRqtvAVRxTdMJOVRj4';
 
         // then, send a request to Contentful (using the same URL from GraphiQL)
         const res =    await fetch(`https://graphql.contentful.com/content/v1/spaces/${space}`, {
