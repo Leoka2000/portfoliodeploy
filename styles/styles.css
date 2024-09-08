@@ -1,9 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box !important;
-  font-family: "Montserrat", sans-serif;
+
+
 }
+
+:root {
+  font-family: "Nunito", sans-serif !important;
+  font-optical-sizing: auto;
+}
+
+
 
 .img1 {
   width: 100%;

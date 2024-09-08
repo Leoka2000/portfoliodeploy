@@ -12,7 +12,7 @@ const ThemeHook = (mode : 'light' | 'dark',setMode :  Dispatch<SetStateAction<"l
     : '#ffffff'
     const getDesignTokens = (mode : PaletteMode) => ({
         typography: {
-            "fontFamily": `'Montserrat', sans-serif`,
+            "fontFamily": `Nunito, sans-serif`,
             "fontSize": 16,
             h1: {
                 color

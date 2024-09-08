@@ -45,7 +45,7 @@ const Navbar = ({toggleDrawer,navbarSx} : INavbar) => {
             boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px',
             py: '.45em',
             zIndex: '555',
-            backdropFilter: 'blur(1px)',
+            backdropFilter: 'blur(6px)',
             position: 'fixed',
             ...navbarSx
         }}
@@ -60,13 +60,7 @@ const Navbar = ({toggleDrawer,navbarSx} : INavbar) => {
                 maxWidth="lg">
 
                 <Logo color={color} toggleDrawer={toggleDrawer} colorMode={colorMode}/>
-                <Button 
-                onClick={()=>router.push('/blog')}
-                sx={{mr:'1em',fontWeight:'500',':hover':{color:'#0092ff'},color:color}}>
-                    {/* <Typography> */}
-                    Blog
-                    {/* </Typography> */}
-                </Button>
+               
                 <IconButton
                     sx={{
                     color,

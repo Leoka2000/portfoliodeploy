@@ -72,7 +72,7 @@ const Hero = () => {
                             maxWidth: '570px',
                             fontWeight: '300'
                         }}>
-                           Hey there! Call me Vito Medlej. I enjoy creating kickass websites and web/mobile apps, ones that suit your desires and needs using latest technologies and cleanest design patterns. 
+                           Hey there! Call me Leo Reus. I enjoy creating quality web/mobile apps, ones that suit your desires and needs using latest technologies and crispy design patterns. 
                         </Typography>
 
                         <Box
@@ -221,9 +221,9 @@ const Hero = () => {
                                     fontSize: '.85em',
                                     padding: '1em'
                                 }}>
-{`"Many ideas grow better when transplanted into another mind than the one where they sprang up."
+{`"Not having anything around to read is dangerous - you have to content yourself with life itself, and that can lead you to take risks."
 
-– Oliver Wendell Holmes`}
+– Michel Houellebecq`}
                                 </Typography>
 
                             </Box>
