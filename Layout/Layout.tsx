@@ -7,6 +7,7 @@ import CustomDrawer from "../src/components/Drawer/Drawer";
 import Footer from "../src/components/Footer/Footer";
 
 
+// @ts-nocheck
 
 const Layout = ({navbarSx, title ,children ,desc } : ILayout) => {
   const [isOpen,setOpen] = useState(false)

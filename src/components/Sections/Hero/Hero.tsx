@@ -11,7 +11,7 @@ import { useRef, useEffect } from "react";
 import ScrollToPlugin from "gsap/dist/ScrollToPlugin";
 import HeroSectionAnimation from "../../../gsap/HeroSectionAnimation";
 import Image from "next/image";
-import Leo from '../../../../public/me/hero-leo.jpg'
+import Leo from "../../../../public/me/hero-leo.jpg";
 
 export const btnStyles = {
   padding: ".77em 1.5em",
@@ -78,9 +78,9 @@ const Hero = () => {
                 fontWeight: "300",
               }}
             >
-              Hey there! Call me Leo Reus. I enjoy creating quality web
-              apps, ones that suit your desires and needs using latest
-              technologies and crispy design patterns.
+              Hey there! Call me Leo Reus. I enjoy creating quality web apps,
+              ones that suit your desires and needs using latest technologies
+              and crispy design patterns.
             </Typography>
 
             <Box
@@ -188,7 +188,7 @@ const Hero = () => {
                   zIndex: "2",
                 }}
                 className="img1"
-                src={Leo}
+                 src="/me/hero-leo.jpg"
                 alt="Personal Image"
               />
               <Box

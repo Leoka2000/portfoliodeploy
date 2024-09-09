@@ -256,6 +256,7 @@ const Contact = () => {
                 target="_blank"
                 t1="Location"
                 t2="Currently living in"
+                href={""}
                 t3="Debrecen - Hungary"
               />
               <ContactBox
