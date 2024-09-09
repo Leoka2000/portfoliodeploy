@@ -70,6 +70,7 @@ const About = () => {
                     <Box sx={{
                         pb: '.5em'
                     }}>
+                        
                         <Typography
                             variant='h1'
                             sx={{
