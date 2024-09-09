@@ -18,7 +18,7 @@ function Copyright() {
             <Typography variant='h1' fontSize='1em'>
                 {'Copyright © '}
                 <Link color="inherit" target='_blank'  rel="noreferrer" href="https://onbeirut.onrender.com">
-                    onbeirut.onrender.com
+                    <a style={{color:"#0092ff"}}>onbeirut.onrender.com</a>
                 </Link>{' '} {new Date().getFullYear()}
                 {'.'}
             </Typography>
@@ -61,15 +61,7 @@ function Footer() {
                     maxWidth='lg'
                     container>
                     <Grid item xs={12} sm={6} md={5}>
-                        <Typography variant='h1' fontSize='1.4em' fontWeight='400'>About</Typography>
-
-                        <Box sx={styles}>
-                            <Typography variant='h3' fontSize='1em'>
-                                Hi, my name is Vito Medlej and I have created the OnBeirut Agency which aims to solve various issues small lebanese
-                                businesses face. You are free to use the website as a template for yourself as long as you
-                                give credit.
-                            </Typography>
-                        </Box>
+                        
 
                     </Grid>
                     <Grid item xs={12} sm={4} md={3}>
@@ -77,30 +69,36 @@ function Footer() {
 
                         <Box className='link' sx={styles}>
                             <Typography 
+                            style={{color:"#0092ff"}}
                             className='FooterLink'
                             onClick={()=>{router.push('/'); gsap.to(window, {duration: .8, scrollTo: `#hero`})}}
                             >Home</Typography>
-                            <Link href='/contact'>Contact</Link>
+                            
+                            <Link 
+                   
+                            href='/contact'>
+                              <a style={{color:"#0092ff"}}> Contact</a></Link>
                          
                             <Typography 
                             className='FooterLink'
+                            style={{color:"#0092ff"}}
                             onClick={()=>{router.push('/'); gsap.to(window, {duration: .5, scrollTo: `#about`})}}
                             >About</Typography>
                         </Box>
 
                     </Grid>
                     <Grid item xs={12} sm={3} md={3}>
-                        <Typography variant='h1' fontSize='1.4em' fontWeight='400'>Contact</Typography>
+                        <Typography variant='h1' fontSize='1.4em' fontWeight='400' >Contact</Typography>
                         <Box className='link' sx={styles}>
-                            <a target='_blank' rel="noreferrer" href='https://github.com/VitoMedlej'>Github</a>
-                            <Typography variant='h1' fontSize='1em'>vito.medlej@gmail.com</Typography>
-                            <Typography variant='h1' fontSize='1em'>Lebanon/Beirut</Typography>
-                            <Typography variant='h1' fontSize='1em'>+961/81826445</Typography>
+                            <a target='_blank' rel="noreferrer" style={{color:"#0092ff"}} href='https://github.com/Leoka2000'>Github</a>
+                            <Typography variant='h1' fontSize='1em'>lreusoliveira@gmail.com</Typography>
+                            <Typography variant='h1' fontSize='1em'>Debrecen/Hungary</Typography>
+                            <Typography variant='h1' fontSize='1em'>+36/705819992</Typography>
                         </Box>
                     </Grid>
                 </Grid>
             </Box>
-            <Copyright/>
+         
         </Box>
 
     );

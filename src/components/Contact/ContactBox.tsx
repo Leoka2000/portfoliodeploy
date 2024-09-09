@@ -25,9 +25,10 @@ const ContactBox = ({t1, t2, t3,target,href} : IContactBox) => {
                     xs: 'center',
                     sm: 'left'
                 },
+                
                 fontWeight: '600'
             }}>
-                <a href={`${href}`} target={target || '_self'} >
+                <a style={{color:"#0092ff"}} href={`${href}`} target={target || '_self'} >
 
                 {t1}
                 </a>

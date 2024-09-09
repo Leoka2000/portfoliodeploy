@@ -6,136 +6,144 @@ import {
     Grid,
     Tooltip,
     Typography
-} from "@mui/material"
-import {centeredStyles} from "../Perks/Perks"
-import ProjectCard from "./ProjectCard"
-import {useEffect} from 'react';
+} from "@mui/material";
+import { centeredStyles } from "../Perks/Perks";
+import ProjectCard from "./ProjectCard";
+import { useEffect } from "react";
 import MainTitleAnimation from "../../../gsap/MainTitleAnimation";
-import gsap from 'gsap'
-import {IProjects} from "../../../Types/Types";
+import gsap from "gsap";
 
-const Projects = ({projectsArray} : IProjects[] | any) => {
+// Dummy data to replace server actions
+const dummyProjectsArray = [
+    {
+        siteUrl: "https://fundhance.co.uk/",
+        repoUrl: "",
+        title: "FundHance",
+        img: "/mockups/fundhancemockerup.png",
+        description: "The Fundhance white-label software is a powerful tool for prop firms seeking to optimize their operations and drive growth. By automating tasks, enhancing risk management, and increasing profitability, the software offers a comprehensive solution. With the potential to reduce manual work by up to 30% and boost profits by 25%, Fundhance's software provides a competitive edge in the prop firm industry."
+    },
+    {
+        siteUrl: "https://megyamelo.com/",
+        repoUrl: "https://github.com/Leoka2000/megyamelo.git",
+        title: "Megy a Meló",
+        img: "/mockups/megymockup.png",
+        description: "Application developed to help students of Hungarian universities to get jobs. It is currently being used by a variaety of students of different institutions in the country."
+    },
+    {
+        siteUrl: "https://melodious-rabanadas-153006.netlify.app/",
+        repoUrl: "https://github.com/Leoka2000/e-commerce-website",
+        title: "Leo Kávézó",
+        img: "/mockups/leocafemockup.png",
+        description: "Online commerce store for selling coffee with a virtual shopping cart feature"
+    },
+    {
+        siteUrl: "https://regal-macaron-8fc4ed.netlify.app/",
+        repoUrl: "https://github.com/Leoka2000/CryptoApp",
+        title: "Leo CryptoVisualizer",
+        img: "/mockups/cryptomockup.png",
+        description: 'My first "complex" web app. It is always nice to look back to it and see how much I have improved. By consuming the CoinGecko API, the app provides live updates on different cryptocurrency informations'
+    }
+];
 
+const Projects = () => {
     useEffect(() => {
+        MainTitleAnimation(".title3", ".title4");
 
-        MainTitleAnimation('.title3', '.title4')
-        if (!projectsArray) 
-            return;
         setTimeout(() => {
-
-            for (let i = 0; i < projectsArray.length; i++) {
-
+            for (let i = 0; i < dummyProjectsArray.length; i++) {
                 gsap.to(`.p${i}`, {
-                    duration: .8,
-                    transform: 'translateX(0%)',
-                    ease: 'easeIn',
+                    duration: 0.8,
+                    transform: "translateX(0%)",
+                    ease: "easeIn",
                     scrollTrigger: {
                         trigger: `.p${i}`,
-                        start: 'top 60%'
+                        start: "top 60%"
                     }
-                })
+                });
             }
-        }, 100)
-    }, [])
+        }, 100);
+    }, []);
 
     return (
-        <Box sx={{
-            overflowX: 'hidden'
-        }}>
+        <Box sx={{ overflowX: "hidden" }}>
             <Container
-                id='ProjectSection'
-                maxWidth='lg'
+                id="ProjectSection"
+                maxWidth="lg"
                 sx={{
-                margin: '0 auto',
-                py: '6em'
-            }}>
+                    margin: "0 auto",
+                    py: "6em"
+                }}
+            >
                 <Grid container>
-
                     <Grid item sx={centeredStyles}>
                         <Typography
-                            className='title3 t25o0'
-                            variant='h1'
+                            className="title3 t25o0"
+                            variant="h1"
                             sx={{
-                            fontSize: {
-                                xs: '2.2em',
-                                sm: '2.5em',
-                                md: '3em'
-                            }
-                        }}
-                            fontWeight='600'>
+                                fontSize: {
+                                    xs: "2.2em",
+                                    sm: "2.5em",
+                                    md: "3em"
+                                }
+                            }}
+                            fontWeight="600"
+                        >
                             Successful Projects I&apos;m Proud Of
                         </Typography>
                         <Typography
-                            className='title4 t25o0'
-                            variant='h2'
+                            className="title4 t25o0"
+                            variant="h2"
                             sx={{
-                            pt: '1.5em',
-                            maxWidth: '570px',
-                            fontSize: {
-                                xs: '.8em',
-                                sm: '1em'
-                            }
-                        }}>
+                                pt: "1.5em",
+                                maxWidth: "570px",
+                                fontSize: {
+                                    xs: ".8em",
+                                    sm: "1em"
+                                }
+                            }}
+                        >
                             No better way to get experience than real-life projects
                         </Typography>
-
                     </Grid>
-                    <Box
-                        sx={{
-                        ...centeredStyles,
-                        mt: '3em'
-                    }}>
-
-                        {projectsArray
-                            ? projectsArray.map((project : any, index : number) => {
-                                return <ProjectCard
-                                    className={`p${index}`}
-                                    isReversed={index % 2 === 0
-                                    ? true
-                                    : false}
-                                    siteUrl={project.siteUrl}
-                                    repoUrl={project.repoUrl}
-                                    title={project.title}
-                                    img={project.img}
-                                    description={project.description}
-                                    key={project.title}/>
-                            })
-
-                            : <Typography variant='h1' fontSize='1em' fontWeight='500' color='red'>There was an error loading the projects.</Typography>
-}
-
+                    <Box sx={{ ...centeredStyles, mt: "3em" }}>
+                        {dummyProjectsArray.map((project: any, index: number) => (
+                            <ProjectCard
+                                className={`p${index}`}
+                                isReversed={index % 2 === 0}
+                                siteUrl={project.siteUrl}
+                                repoUrl={project.repoUrl}
+                                title={project.title}
+                                img={project.img}
+                                description={project.description}
+                                key={project.title}
+                            />
+                        ))}
                     </Box>
-                    <Box
-                        sx={{
-                        margin: '0 auto',
-                        mt: '3em'
-                    }}>
-                        <Tooltip title='More Projects Soon'>
-
+                    <Box sx={{ margin: "0 auto", mt: "3em" }}>
+                        <Tooltip title="More Projects Soon">
                             <Button
-                                className='loadMore'
-                                variant='contained'
+                                className="loadMore"
+                                variant="contained"
                                 sx={{
-                                opacity: 0,
-                                padding: '.5em 3.5em',
-                                background: 'transparent',
-                                border: '1px solid',
-                                color: '#0092ff',
-                                ':hover': {
-                                    border: '1px solid transparent'
-                                }
-                            }}>
+                                    opacity: 0,
+                                    padding: ".5em 3.5em",
+                                    background: "transparent",
+                                    border: "1px solid",
+                                    color: "#0092ff",
+                                    ":hover": {
+                                        border: "1px solid transparent"
+                                    }
+                                }}
+                            >
                                 Load More
                             </Button>
                         </Tooltip>
-
                     </Box>
                 </Grid>
-
             </Container>
-            < Divider className='divider'/>
+            <Divider className="divider" />
         </Box>
-    )
-}
+    );
+};
 
-export default Projects
+export default Projects;

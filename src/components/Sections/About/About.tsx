@@ -4,6 +4,8 @@ import Typography from '@mui/material/Typography';
 import ReadMore from '../ReadMore/ReadMore';
 import { ColorModeContext } from '../../../../pages/_app';
 import { useContext } from 'react';
+import Leo from '../../../../public/me/leo-about.jpg'
+
 const About = () => {
     const colorMode = useContext(ColorModeContext)
     return (
@@ -61,7 +63,7 @@ const About = () => {
                             alt='Personal Image'
                             className='img1 '
                             layout='fill'
-                            src={`https://res.cloudinary.com/dwcu3wcol/image/upload/v1659776757/20211226_154523_-_Copy_hhy2kp.jpg`}/>
+                            src={Leo}/>
                     </Box>
                 </Grid>
                 <Grid item xs={12} sm={12} md={7.5} lg={7}>
@@ -83,7 +85,7 @@ const About = () => {
                             }
                         }}
                             fontWeight='600'>
-                            About Me, Im Vito Medlej
+                            About Me, Im Leo Reus
                         </Typography>
                         <Typography
                             variant='h2'
@@ -94,7 +96,7 @@ const About = () => {
                                 sm: '1em'
                             }
                         }}>
-                      A 20-year-old Lebanon-based software developer. I first started developing games using Unity3D, but soon realized I preferred web and mobile app development, and I&apos;ve been building and working on that for the past 3 years now.
+                      A 24-year-old Hungary-based software developer. I first started developing games using Unity3D, but soon realized I preferred web and mobile app development, and I&apos;ve been building and working on that for the past 3 years now.
 
                         </Typography>
                     </Box>
@@ -108,11 +110,11 @@ const About = () => {
                             },
                             pb:'.5em'
                         }}>
-                      Being self-taught made me appreciate education; thus, I&apos;m studying Management Information Systems simultaneously. Business and technology are both my passions.
+                      Being self-taught made me appreciate education; thus, I&apos;m studying programming and biochemical engineering simultaneously. Chemistry and technology are both my passions.
 
                         </Typography>
                     <ReadMore>
-                    Aside from working hard, I tend to enjoy simple things like reading, petting cats, hitting the gym, and other things we humans do. If any of what I said seems interesting, then please do not hesitate to send me a message.
+                    Aside from working hard, I tend to enjoy simple things like reading, petting dogs, hitting the gym, and other things we humans do. If any of what I said seems interesting, then please do not hesitate to send me a message.
                     </ReadMore>
                 </Grid>
             </Grid>
