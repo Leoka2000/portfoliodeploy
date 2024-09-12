@@ -30,19 +30,20 @@ const dummyProjectsArray = [
         description: "Application developed to help students of Hungarian universities to get jobs. It is currently being used by a variaety of students of different institutions in the country."
     },
     {
-        siteUrl: "https://melodious-rabanadas-153006.netlify.app/",
+        siteUrl: "https://setimaideaink.netlify.app/",
+        repoUrl: "https://github.com/Leoka2000/LuckyzLinez",
+        title: "Sétima idea ink",
+        img: "/mockups/cauanmockup.png",
+        description: 'Custom portfolio website I made for a freelance client. '
+    },
+    {
+        siteUrl: "https://leokavezo.netlify.app/",
         repoUrl: "https://github.com/Leoka2000/e-commerce-website",
         title: "Leo Kávézó",
         img: "/mockups/leocafemockup.png",
-        description: "Online commerce store for selling coffee with a virtual shopping cart feature"
+        description: 'My first "complex" web app. It is always good to look back and see how much we can improve over the years.'
     },
-    {
-        siteUrl: "https://regal-macaron-8fc4ed.netlify.app/",
-        repoUrl: "https://github.com/Leoka2000/CryptoApp",
-        title: "Leo CryptoVisualizer",
-        img: "/mockups/cryptomockup.png",
-        description: 'My first "complex" web app. It is always nice to look back to it and see how much I have improved. By consuming the CoinGecko API, the app provides live updates on different cryptocurrency informations'
-    }
+    
 ];
 
 const Projects = () => {

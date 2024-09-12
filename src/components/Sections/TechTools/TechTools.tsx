@@ -94,6 +94,18 @@ const dummyIconsArrayBackend = [
     svg: "/icons/redis.svg",
     isBackend: true,
     filter: false,
+  },
+  {
+    title: "Jira",
+    svg: "/icons/jira.svg",
+    isBackend: true,
+    filter: false,
+  },
+  {
+    title: "Jenkins",
+    svg: "/icons/jenkins.svg",
+    isBackend: true,
+    filter: false,
   }
 ];
 
@@ -161,7 +173,7 @@ const TechTools = () => {
                 },
               }}
             >
-              Full-stack, batteries-included technologies I prefer using.
+             Technologies I prefer using.
             </Typography>
           </Grid>
           <Grid
@@ -200,7 +212,7 @@ const TechTools = () => {
                 },
               }}
             >
-             My picks for back-end and DevOps oriented technologies
+             My picks for database and DevOps oriented technologies
             </Typography>
 
 

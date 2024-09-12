@@ -79,7 +79,7 @@ const Hero = () => {
               }}
             >
               Hey there! Call me Leo Reus. I enjoy creating quality web apps,
-              ones that suit your desires and needs using latest technologies
+              ones that suit your desires and needs using robust technologies
               and crispy design patterns.
             </Typography>
 
@@ -109,28 +109,7 @@ const Hero = () => {
               >
                 View Projects
               </Button>
-              <a
-                href={`https://drive.google.com/drive/u/0/my-drive`}
-                rel="noreferrer"
-                target="_blank"
-              >
-                <Button
-                  className="b2"
-                  sx={{
-                    ...btnStyles,
-                    opacity: 0,
-                    height: "max-content",
-                    padding: "1em 1.5em",
-                    width: { xs: "100%", sm: "auto" },
-                    ":hover": {
-                      color: "#0092ff",
-                    },
-                  }}
-                  variant="text"
-                >
-                  <Typography fontSize="14px">View Resume</Typography>
-                </Button>
-              </a>
+              
             </Box>
           </Box>
         </Grid>
@@ -188,7 +167,7 @@ const Hero = () => {
                   zIndex: "2",
                 }}
                 className="img1"
-                 src="/me/hero-leo.jpg"
+                 src="/me/leo-about.jpg"
                 alt="Personal Image"
               />
               <Box

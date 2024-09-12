@@ -63,7 +63,7 @@ const About = () => {
                             alt='Personal Image'
                             className='img1 '
                             layout='fill'
-                            src='/me/leo-about.jpg'/>
+                            src='/me/hero-leo.jpg'/>
                     </Box>
                 </Grid>
                 <Grid item xs={12} sm={12} md={7.5} lg={7}>
@@ -97,7 +97,7 @@ const About = () => {
                                 sm: '1em'
                             }
                         }}>
-                      A 24-year-old Hungary-based software developer. I first started developing games using Unity3D, but soon realized I preferred web and mobile app development, and I&apos;ve been building and working on that for the past 3 years now.
+                      A 24-year-old Hungary-based software developer. I first started developing games using Unity3D, but soon realized I preferred web development, and I&apos;ve been building and working on that for the past 3 years now.
 
                         </Typography>
                     </Box>
