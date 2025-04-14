@@ -133,19 +133,22 @@ const ProjectCard = ({
               mt: "1em",
             }}
           >
-            <a href={`${siteUrl}`} rel="noreferrer" target="_blank">
-              <Button
-                variant="contained"
-                sx={{
-                  ...btnStyles,
-                  padding: ".5em .8em",
-                  color: "white",
-                  border: "1px solid #0092ff",
-                }}
-              >
-                <Typography fontSize="12px">Live Site</Typography>
-              </Button>
-            </a>
+            {siteUrl !== "https://fundhance.co.uk/" && (
+              <a href={siteUrl} rel="noreferrer" target="_blank">
+                <Button
+                  variant="contained"
+                  sx={{
+                    ...btnStyles,
+                    padding: ".5em .8em",
+                    color: "white",
+                    border: "1px solid #0092ff",
+                  }}
+                >
+                  <Typography fontSize="12px">Live Site</Typography>
+                </Button>
+              </a>
+            )}
+
             {repoUrl && (
               <a href={`${repoUrl}`} rel="noreferrer" target="_blank">
                 <Button
