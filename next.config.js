@@ -2,16 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  images: {
-    domains: [
-      "open.cruip.com",
-      "ucarecdn.com",
-      "www.svgrepo.com",
-      "images.unsplash.com",
-      "res.cloudinary.com",
-      "leoreusportfolio.netlify.app",
-    ],
-  },
+  output: "export",
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
@@ -19,7 +10,6 @@ const nextConfig = {
     });
     return config;
   },
-  output: "export", // <-- This line is added for static export
 };
 
 module.exports = nextConfig;

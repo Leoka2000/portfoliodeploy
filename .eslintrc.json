@@ -1,7 +1,4 @@
 {
   "extends": "next/core-web-vitals",
-  "rules": {
-    "eol-last": "off"
-  },
-  "singleQuote": true
+
 }
